@@ -6,7 +6,7 @@
 
 class Solution:
     def mergeKLists(self, lists: List[ListNode]) -> ListNode:
-        if lists is None:
+        if lists == []:
             return
         n = len(lists)
         return self.merge(lists, 0, n-1)
